@@ -27,10 +27,10 @@ public class ThemeParkRideController {
         return themeParkRideRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Invalid ride id %s", id)));
     }
 
-    //@DeleteMapping(value = "/ride/{id}")
-    //public void deleteRide(@PathVariable long id){
-    //    themeParkRideRepository.deleteById(id);//.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("No such %s found", id)));
-    //}
+    @DeleteMapping(value = "/ride/{id}")
+    public void deleteRide(@PathVariable long id){
+        themeParkRideRepository.deleteById(id);//.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("No such %s found", id)));
+    }
 
     @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
     public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
