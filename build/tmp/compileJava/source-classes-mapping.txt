@@ -1,0 +1,8 @@
+com/tg/entity/ThemeParkRide.java
+ com.tg.entity.ThemeParkRide
+com/tg/repository/ThemeParkRideRepository.java
+ com.tg.repository.ThemeParkRideRepository
+com/tg/controller/ThemeParkRideController.java
+ com.tg.controller.ThemeParkRideController
+com/tg/ThemeParkApplication.java
+ com.tg.ThemeParkApplication
