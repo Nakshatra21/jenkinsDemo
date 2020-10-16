@@ -27,10 +27,10 @@ public class ThemeParkRideController {
         return themeParkRideRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Invalid ride id %s", id)));
     }
 
-    @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
-    public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
-        return themeParkRideRepository.save(themeParkRide);
-    }
+//     @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
+//     public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
+//         return themeParkRideRepository.save(themeParkRide);
+//     }
 
 }
 
