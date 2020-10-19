@@ -23,13 +23,13 @@ public class ThemeParkRide {
     @NotEmpty
     private String description;
     private int thrillFactor;
-    private int vomitFactor;
+    private int speedFactor;
 
-    public ThemeParkRide(String name, String description, int thrillFactor, int vomitFactor) {
+    public ThemeParkRide(String name, String description, int thrillFactor, int speedFactor) {
         this.name = name;
         this.description = description;
         this.thrillFactor = thrillFactor;
-        this.vomitFactor = vomitFactor;
+        this.speedFactor = speedFactor;
     }
 
 }
