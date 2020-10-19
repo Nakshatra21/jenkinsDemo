@@ -27,16 +27,16 @@ public class ThemeParkRideController {
         return themeParkRideRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Invalid ride id %s", id)));
     }
 
-    @DeleteMapping(value = "/ride/{id}")
-    public String deleteRide(@PathVariable long id){
-        themeParkRideRepository.deleteById(id);
-        return "Delete Successful!";
-    }
+//     @DeleteMapping(value = "/ride/{id}")
+//     public String deleteRide(@PathVariable long id){
+//         themeParkRideRepository.deleteById(id);
+//         return "Delete Successful!";
+//     }
 
-     @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
-     public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
-         return themeParkRideRepository.save(themeParkRide);
-     }
+//      @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
+//      public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
+//          return themeParkRideRepository.save(themeParkRide);
+//      }
 
 }
 
