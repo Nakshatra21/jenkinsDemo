@@ -33,10 +33,10 @@ public class ThemeParkRideController {
         return "Delete Successful!";
     }
 
-     @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
-     public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
-         return themeParkRideRepository.save(themeParkRide);
-     }
+//      @PostMapping(value = "/ride",  produces = MediaType.APPLICATION_JSON_VALUE)
+//      public ThemeParkRide createRide(@Valid @RequestBody ThemeParkRide themeParkRide) {
+//          return themeParkRideRepository.save(themeParkRide);
+//      }
 
 }
 
